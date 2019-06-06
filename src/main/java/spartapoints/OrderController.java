@@ -9,10 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @RestController
-public class PurchaseController {
+public class OrderController {
 
 	@Autowired
-	PurchaseRepository purchaseRepository;
+    OrderRepository orderRepository;
 
  	@RequestMapping("/checkversion")
     public String forTesting() {
@@ -20,11 +20,11 @@ public class PurchaseController {
     }
 
     @CrossOrigin()
-    @RequestMapping("/purchasesByNameSpace")
-    public List<Purchase> findByNameSpace(@RequestParam(required=false, defaultValue="") String nameSpace) {
-		List<Purchase> purchases = purchaseRepository.findByNameSpace(nameSpace);
+    @RequestMapping("/ordersByNameSpace")
+    public List<CxOrder> findByNameSpace(@RequestParam(required=false, defaultValue="") String nameSpace) {
+		List<CxOrder> cxOrders = orderRepository.findByNameSpace(nameSpace);
 		System.out.println("In findByNameSpace with "+ nameSpace);
-        return purchases;
+        return cxOrders;
     }
 
 }
