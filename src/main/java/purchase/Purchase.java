@@ -13,9 +13,35 @@ public class Purchase {
 	private long id;
 
 	private String nameSpace;
-	private String postalCode;
-	private String town;
+	private String code;
 	private double total;
+	private String date;
+	private int points;
+	private int cash;
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(final String date) {
+		this.date = date;
+	}
+
+	public int getPoints() {
+		return points;
+	}
+
+	public void setPoints(final int points) {
+		this.points = points;
+	}
+
+	public int getCash() {
+		return cash;
+	}
+
+	public void setCash(final int cash) {
+		this.cash = cash;
+	}
 
 	public String getNameSpace() {
 		return nameSpace;
@@ -25,23 +51,13 @@ public class Purchase {
 		this.nameSpace = nameSpace;
 	}
 
-	public String getPostalCode() {
-		return postalCode;
+	public String getCode() {
+		return code;
 	}
 
-	public void setPostalCode(String postalCode) {
-		this.postalCode = postalCode;
+	public void setCode(String code) {
+		this.code = code;
 	}
-
-
-	public String getTown() {
-		return town;
-	}
-
-	public void setTown(String town) {
-		this.town = town;
-	}
-
 
 	public double getTotal() {
 		return total;

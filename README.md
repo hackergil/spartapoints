@@ -21,8 +21,8 @@ curl http://localhost:8017/purchases
 
 ## Post:
 
-curl -i -X POST -H "Content-Type:application/json" -d '{"nameSpace": "space1", "postalCode": "BN44", "town": "Brighton", "total": "1234"}' http://localhost:8017/purchases
-curl -i -X POST -H "Content-Type:application/json" -d '{"nameSpace": "space1", "postalCode": "RG11", "town": "Reading", "total": "1234"}' http://localhost:8017/purchases
+curl -i -X POST -H "Content-Type:application/json" -d '{"nameSpace": "space1", "code": "BN44", "town": "Brighton", "total": "1234"}' http://localhost:8017/purchases
+curl -i -X POST -H "Content-Type:application/json" -d '{"nameSpace": "space1", "code": "RG11", "town": "Reading", "total": "1234"}' http://localhost:8017/purchases
 
 ## Update:
 
@@ -60,7 +60,7 @@ https://xfcl20190322a.elastic-bose.cluster.extend.sap.cx/api.yaml
 https://editor.swagger.io?url=https://raw.githubusercontent.com/kenlomaxhybris/purchasesWebService/master/docs/api/api.yaml
 https://xfcl20190322a.elastic-bose.cluster.extend.sap.cx/purchases
 
-curl -H "Content-Type: application/json" -d '{"orderId":"11854638GU110615ELIN54ZQ","nameSpace": "space1","total": 1234.56,"postalCode": "BN44 3PT","town": "Brighton"}' https://purchaseswebservice.elastic-bose.cluster.extend.sap.cx/purchases
+curl -H "Content-Type: application/json" -d '{"orderId":"11854638GU110615ELIN54ZQ","nameSpace": "space1","total": 1234.56,"code": "BN44 3PT","town": "Brighton"}' https://purchaseswebservice.elastic-bose.cluster.extend.sap.cx/purchases
 
 curl https://purchaseswebservice.elastic-bose.cluster.extend.sap.cx/purchases
 curl -X DELETE https://xfcl20190322a.elastic-bose.cluster.extend.sap.cx/purchases/1
