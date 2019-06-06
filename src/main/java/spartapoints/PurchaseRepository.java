@@ -1,4 +1,4 @@
-package purchase;
+package spartapoints;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package purchase;
+package spartapoints;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

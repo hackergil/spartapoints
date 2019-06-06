@@ -5,7 +5,7 @@ info:
 paths:
   /purchases:
     post:
-      description: Creates a new purchase.
+      description: Creates a new spartapoints.
       requestBody:
         content:
           application/json:
